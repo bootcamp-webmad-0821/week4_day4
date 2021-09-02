@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Listado de libros</h1>
+    <hr>
+
+    {{#each books}}
+    <p>{{title}} <small>- {{author}} - [<a href="/libros/detalles/{{id}}">ver detalles</a>]</small></p>
+    <hr style="opacity: .5;">
+    {{/each}}
+
+    <a href="/" class="btn btn-dark">Volver</a>
+</div>
